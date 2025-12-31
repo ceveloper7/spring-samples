@@ -1,4 +1,4 @@
-package com.ceva.injection.constructor;
+package com.ceva.autowirebyname;
 
 public class Specification {
     private String make;
@@ -9,6 +9,7 @@ public class Specification {
     }
 
     public void setMake(String make) {
+        System.out.println("setter make called");
         this.make = make;
     }
 
