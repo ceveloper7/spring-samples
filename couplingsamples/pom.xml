@@ -15,6 +15,7 @@
     </properties>
 
     <dependencies>
+        <!-- basic spring dependencies -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -26,6 +27,7 @@
             <artifactId>spring-context</artifactId>
             <version>6.2.11</version>
         </dependency>
+        <!-- end basic dependencies -->
     </dependencies>
 
 </project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="userDatabaseProvider" class="com.ceva.coupling.UserDatabaseProvider"/>
+    <bean id="webServiceDataProvider" class="com.ceva.coupling.WebServiceDataProvider" />
+    <bean id="newDatabaseProvider" class="com.ceva.coupling.NewDatabaseProvider"/>
+
+    <bean id="userManagerWithDatabaseProvider" class="com.ceva.coupling.UserManager">
+        <constructor-arg ref="userDatabaseProvider"/>
+    </bean>
+
+    <bean id="userManagerWithWebServiceDataProvider" class="com.ceva.coupling.UserManager">
+        <constructor-arg ref="webServiceDataProvider"/>
+    </bean>
+
+    <bean id="userManagerWithNewDatabaseProvider" class="com.ceva.coupling.UserManager">
+        <constructor-arg ref="newDatabaseProvider"/>
+    </bean>
+
+</beans>
