@@ -1,4 +1,4 @@
-package com.ceva.coupling.injection.setter;
+package com.ceva.injection.setter;
 
 public class Car {
 

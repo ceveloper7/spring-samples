@@ -2,12 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="carSpecification" class="com.ceva.coupling.injection.constructor.Specification">
+    <bean id="carSpecification" class="com.ceva.injection.constructor.Specification">
         <property name="make" value="Toyota" />
         <property name="model" value="Corolla" />
     </bean>
 
-    <bean id="myCar" class="com.ceva.coupling.injection.constructor.Car">
+    <bean id="myCar" class="com.ceva.injection.constructor.Car">
         <constructor-arg ref="carSpecification" />
     </bean>
 </beans>

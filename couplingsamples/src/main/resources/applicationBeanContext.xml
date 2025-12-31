@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="myBean" class="com.ceva.coupling.bean.MyBean">
+    <bean id="myBean" class="com.ceva.bean.MyBean">
         <property name="message" value="Hello world from Spring" />
     </bean>
 

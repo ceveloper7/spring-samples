@@ -1,4 +1,4 @@
-package com.ceva.coupling.injection.setter;
+package com.ceva.injection.constructor;
 
 public class Specification {
     private String make;

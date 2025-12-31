@@ -1,4 +1,4 @@
-package com.ceva.coupling.injection.constructor;
+package com.ceva.injection.constructor;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

@@ -1,4 +1,4 @@
-package com.ceva.coupling.injection.constructor;
+package com.ceva.injection.constructor;
 
 public class Car {
     private Specification specification;

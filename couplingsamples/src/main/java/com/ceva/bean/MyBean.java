@@ -1,4 +1,4 @@
-package com.ceva.coupling.bean;
+package com.ceva.bean;
 
 public class MyBean {
     private String message;

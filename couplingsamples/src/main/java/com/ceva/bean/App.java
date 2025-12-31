@@ -1,6 +1,5 @@
-package com.ceva.coupling;
+package com.ceva.bean;
 
-import com.ceva.coupling.bean.MyBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
