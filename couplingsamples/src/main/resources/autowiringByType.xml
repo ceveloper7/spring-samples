@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- al ser injection by type, no importa el id del bean, mientras sea del tipo
+         que el bean myCar necesita-->
+    <bean id="spec" class="com.ceva.autowirebytype.Specification">
+        <property name="model" value="Uno"/>
+        <property name="make" value="Fiat" />
+    </bean>
+
+    <bean id="myCar" class="com.ceva.autowirebytype.Car" autowire="byType" />
+</beans>
